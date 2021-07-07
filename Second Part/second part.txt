@@ -1,0 +1,25 @@
+Second Part:
+Inherit the “Turtle” from the “turtle” module into a class named “Ankur”. Initialize with the function __init__(self). Then, set the initializer as the turtle. Likewise, set the speed to 0 and pick the pen up as we are not ready to draw.
+class Ankur(turtle.Turtle):
+    def __init__(self):
+        turtle.Turtle.__init__(self)
+
+        self.speed(0)
+        self.penup()
+Coming out of the function, create a function(ankur1) with the parameters “t1” and “t2”. Inside this function, set the current x coordinate into the variable x1 and the y coordinate into y1. Then, do the same with the t2 and “x2”, “y2”. Similarly, set the arctangent of “y1-y2” and “x1-x2” into “taauko” with the math module. Again, multiply the “taauko” with “180.0 / 3.14159” and return “taauko”.
+def ankur1(t1, t2):
+    x1 = t1.xcor()
+    y1 = t1.ycor()
+    
+    x2 = t2.xcor()
+    y2 = t2.ycor()
+    
+    taauko = math.atan2(y1 - y2, x1 - x2)
+    taauko = taauko * 180.0 / 3.14159
+    
+    return taauko
+Create an object named “player” from the Ankur() class. Then, set the color to white and the shape to “player”. Declare the score of the player object to 0.
+player = Ankur()
+player.color("white")
+player.shape("player")
+player.score = 0
