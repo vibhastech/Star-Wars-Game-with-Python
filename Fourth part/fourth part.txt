@@ -1,0 +1,17 @@
+Fourth Part:
+Create an empty list with the variable “chattans”.These will be used as asteroids. Then, create a for loop with the range of 5. Inside this loop, create an object from Ankur() as “chattan” and set the color of the chattan as brown and shape as an arrow. Now, we will set the speed of the chattan as a random integer from the following code.
+chattans = []
+
+for _ in range(5):   
+    chattan = Ankur()
+    chattan.color("brown")
+    chattan.shape("arrow")
+Inside the loop itself, position the chattan to the origin. Set another variable named “taauko” and a random integer value from 0 to 260. Again, create another variable “distance” and set the random value as an integer from 300 to 400. Likewise, set the heading of the chattan as “taauko” and move the chattan forward at the “distance” unit. Similarly, add the current value of “chattan” into the list “chattans”
+    chattan.speed  = random.randint(2, 3)/50
+    chattan.goto(0, 0)
+    taauko = random.randint(0, 260)
+    distance = random.randint(300, 400)
+    chattan.setheading(taauko)
+    chattan.fd(distance)
+    chattan.setheading(ankur1(player, chattan))
+    chattans.append(chattan)
