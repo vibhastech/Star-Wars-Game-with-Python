@@ -1,0 +1,17 @@
+Third Part:
+Create an empty list named “missiles”. Then, create a for loop with the range of 3. Inside this loop, create an object from Ankur() named “missile”. Likewise, set the color of the missile to red, shape as an arrow. Then, declare the speed of the missile to 1 and state it as “ready”. Similarly, hide the turtle and append the current missile into the “missiles” list.
+missiles = []
+for _ in range(3):
+    missile = Ankur()
+    missile.color("red")
+    missile.shape("arrow")
+    missile.speed = 1
+    missile.state = "ready"
+    missile.hideturtle()
+    missiles.append(missile)
+Now, coming out of the loop, create another object from Ankur() as “pen”. Set the color of this turtle object as white and hide the turtle. Then, position the turtle to (0, 250). After that, we will display the score with the code below.
+pen = Ankur()
+pen.color("white")
+pen.hideturtle()
+pen.goto(0, 250)
+pen.write("Score: 0", False, align = "center", font = ("Arial", 24, "normal"))
