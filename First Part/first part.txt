@@ -1,0 +1,16 @@
+First Part:
+Import the modules “turtle,” “math,” and “random.” Set a turtle screen in the “window” variable. Set the screen up as “width=600, height=600”. Then, declare the background color of the screens as black.
+import turtle
+import math
+import random
+
+window = turtle.Screen()
+window.setup(width=600, height=600)
+window.title("Star Wars Game by Ankur Gajurel")
+window.bgcolor("black")
+Set the tracer to 0. Likewise, set the vertices as “(0,15),(-15,0),(-18,5),(-18,-5),(0,0),(18,-5),(18, 5),(15, 0)” in the “vertex” variable. Similarly, register the shape as “player” and the vertex variable from above.
+window.tracer(0)
+vertex = ((0,15),(-15,0),(-18,5),(-18,-5),(0,0),(18,-5),(18, 5),(15, 0))
+window.register_shape("player", vertex)
+asVertex = ((0, 10), (5, 7), (3,3), (10,0), (7, 4), (8, -6), (0, -10), (-5, -5), (-7, -7), (-10, 0), (-5, 4), (-1, 8))
+window.register_shape("chattan", asVertex)
